@@ -1,3 +1,4 @@
+// questions from logic.js
 var questions = window.questions; 
 
 var startButton = document.getElementById('start');
@@ -12,18 +13,18 @@ var timeElement = document.getElementById('time');
 
 var currentQuestionIndex = 0;
 var score = 0;
-var timeLeft = 60; // Set the initial time for the quiz (in seconds)
+var timeLeft = 60; 
 var timer;
 
 // Function to start the quiz
 function startQuiz() {
   document.getElementById('start-screen').classList.add('hide');
   document.getElementById('questions').classList.remove('hide');
-  timer = setInterval(updateTimer, 1000); // Start the timer
+  timer = setInterval(updateTimer, 1000); // Start the quiz time
   showNextQuestion();
 }
 
-// Function to update the timer
+// Function to update the time
 function updateTimer() {
   timeLeft--;
   timeElement.textContent = timeLeft;
@@ -33,7 +34,7 @@ function updateTimer() {
   }
 }
 
-// Function to display the next question
+// Function for  the next question
 function showNextQuestion() {
   if (currentQuestionIndex < questions.length) {
     const currentQuestion = questions[currentQuestionIndex];
@@ -53,18 +54,18 @@ function showNextQuestion() {
   }
 }
 
-// Function to check the user's answer
+// Function to check the user answer
 function checkAnswer(selectedIndex) {
   const currentQuestion = questions[currentQuestionIndex - 1];
   if (selectedIndex === currentQuestion.correctAnswer) {
-    score += 10; // Adjust the scoring as needed
+    score += 10; 
   } else {
-    timeLeft -= 10; // Deduct time for incorrect answers
+    timeLeft -= 10; 
   }
   showNextQuestion();
 }
 
-// Function to end the quiz
+//End the quiz function
 function endQuiz() {
   clearInterval(timer);
   document.getElementById('questions').classList.add('hide');
@@ -72,11 +73,9 @@ function endQuiz() {
   finalScore.textContent = score;
 }
 
-// Function to save high score (you need to implement this)
+// Function to save high score 
 function saveHighScore() {
-  const initials = initialsInput.value;
-  // Implement saving the high score and initials (e.g., using local storage or a server).
-  // You can store the high scores in an array or an object.
+  var initials = initialsInput.value;
 }
 
 // Event listeners

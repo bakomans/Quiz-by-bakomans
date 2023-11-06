@@ -24,5 +24,5 @@ var questions = [
     
 ];
 
-
+// This is taken from internet as i have problem with import statement
 window.questions = questions;
