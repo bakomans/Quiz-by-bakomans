@@ -25,4 +25,4 @@ var questions = [
 ];
 
 
-export default questions;
+window.questions = questions;
