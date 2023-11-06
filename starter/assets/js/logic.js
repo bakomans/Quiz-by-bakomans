@@ -16,11 +16,11 @@ var score = 0;
 var timeLeft = 60; 
 var timer;
 
-// Function to start the quiz
+// Function to start the quiz and the time
 function startQuiz() {
   document.getElementById('start-screen').classList.add('hide');
   document.getElementById('questions').classList.remove('hide');
-  timer = setInterval(updateTimer, 1000); // Start the quiz time
+  timer = setInterval(updateTimer, 1000); 
   showNextQuestion();
 }
 

@@ -8,7 +8,7 @@ var questions = [
     },
     {
         question: "Which country are you visiting if you are in the Taj Mahal",
-        choices: ["pakistan", "India", "France", "USA", "Cambodia"],
+        choices: ["Pakistan", "India", "France", "USA", "Cambodia"],
         correctAnswer: 1
     },
     {
