@@ -78,6 +78,6 @@ function saveHighScore() {
   var initials = initialsInput.value;
 }
 
-// Event listeners
+// Event listeners calls
 startButton.addEventListener('click', startQuiz);
 submitButton.addEventListener('click', saveHighScore);
