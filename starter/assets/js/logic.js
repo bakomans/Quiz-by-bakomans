@@ -1,6 +1,6 @@
 // questions from logic.js
 var questions = window.questions; 
-
+// variables needed in this project
 var startButton = document.getElementById('start');
 var questionTitle = document.getElementById('question-title');
 var choicesContainer = document.getElementById('choices');
@@ -65,7 +65,7 @@ function checkAnswer(selectedIndex) {
   showNextQuestion();
 }
 
-//End the quiz function
+//End of the quiz function
 function endQuiz() {
   clearInterval(timer);
   document.getElementById('questions').classList.add('hide');
