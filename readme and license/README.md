@@ -13,3 +13,6 @@
  ![User win !](image-2.png)
 
  # link to project
+
+ https://github.com/bakomans/Quiz-by-bakomans
+ https://bakomans.github.io/Quiz-by-bakomans/
